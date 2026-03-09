@@ -70,6 +70,12 @@ nano /etc/logrotate.d/golang
     create 0644 www-data www-data
 }
 ```
+## permission log
+```
+sudo chown -R www-data:www-data /var/log/golang
+sudo chmod 755 /var/log/golang
+sudo chmod 644 /var/log/golang/*.log
+```
 # Configurate Nginx
 ## conf
 ```
