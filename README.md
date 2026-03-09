@@ -27,8 +27,8 @@ After=network.target
 Type=simple
 User=www-data
 Group=www-data
-WorkingDirectory=/opt/goapps/myapp
-ExecStart=/opt/goapps/myapp/myapp
+WorkingDirectory=/[directoryGolangApps]
+ExecStart=/[directoryGolangApps]/myapp
 Restart=always
 RestartSec=5
 
@@ -39,8 +39,8 @@ MemoryHigh=384M
 MemoryMax=512M
 TasksMax=200
 
-StandardOutput=append:/var/log/goapps/myapp.app.log
-StandardError=append:/var/log/goapps/myapp.error.log
+StandardOutput=append:/var/log/golang/[nameService].app.log
+StandardError=append:/var/log/golang/[nameService].error.log
 
 NoNewPrivileges=yes
 PrivateTmp=yes
