@@ -76,6 +76,13 @@ sudo chown -R www-data:www-data /var/log/golang
 sudo chmod 755 /var/log/golang
 sudo chmod 644 /var/log/golang/*.log
 ```
+## active and check systemd
+```
+sudo systemctl daemon-reload
+sudo systemctl enable [nameService]
+sudo systemctl start [nameService]
+sudo systemctl status [nameService]
+```
 # Configurate Nginx
 ## conf
 ```
